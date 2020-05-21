@@ -23,7 +23,6 @@ import java.awt.Color;
 public class Main extends GraphicsProgram {
 
     public static void main(String[] args) {
-
         (new com.company.Main()).start();
     }
 
