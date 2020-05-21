@@ -44,6 +44,7 @@ public class Main extends GraphicsProgram {
         GLabel label = new GLabel(s);
         label.setColor(rgen.nextColor());
         label.setFont("ARIAL-18");
+
         add(label, rgen.nextDouble(0, (getWidth() - label.getWidth())),
                 rgen.nextDouble(label.getAscent(), getHeight() - label.getAscent()));
     }
