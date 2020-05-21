@@ -34,7 +34,6 @@ public class Main extends GraphicsProgram {
         }
 
         addMouseListeners();
-
     }
 
     /****Creates a new label,
@@ -48,6 +47,7 @@ public class Main extends GraphicsProgram {
         add(label, rgen.nextDouble(0, (getWidth() - label.getWidth())),
                 rgen.nextDouble(label.getAscent(), getHeight() - label.getAscent()));
     }
+
 
     public void mousePressed(MouseEvent e) {
 
@@ -71,9 +71,7 @@ public class Main extends GraphicsProgram {
             add(gobjNew);
             gobjNew.sendToFront();
 
-
         }
-
 
     }
 
