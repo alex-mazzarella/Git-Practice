@@ -57,6 +57,7 @@ public class Main extends GraphicsProgram {
         gobj = (GLabel) getElementAt(last);
 
         if (gobj != null) { //mouse has been pressed over one label
+
             gobjNew = new GLabel(gobj.getLabel(), gobj.getX(), gobj.getY());
             /** in debugging, quando arriva alla riga successiva, esce dal debugging, ma continua
              * ad eseguire correttamente il programma
@@ -68,11 +69,11 @@ public class Main extends GraphicsProgram {
              */
 
 
-            gobjNew.setColor(Color.decode(gobjNew.getLabel()));
+            gobj.setColor(Color.decode("123"));
 
-            gobjNew.setFont(gobj.getFont());
-            add(gobjNew);
-            gobjNew.sendToFront();
+//            gobjNew.setFont(gobj.getFont());
+//            add(gobjNew);
+//            gobjNew.sendToFront();
         }
 
     }
