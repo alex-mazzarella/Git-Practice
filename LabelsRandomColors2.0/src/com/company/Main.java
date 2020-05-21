@@ -60,6 +60,7 @@ public class Main extends GraphicsProgram {
             /** in debugging, quando arriva alla riga successiva, esce dal debugging, ma continua
              * ad eseguire correttamente il programma
              *
+             *
              * Ho provato a sostituire in setColor un colore fisso (es ROSSO) per vedere se il resto del codice funzia,
              * ed ha esito positivo. Quindi c'e qualcosa con la istruzione "decode" che non va.
              * nessun errore, nessuna warnings
@@ -70,7 +71,6 @@ public class Main extends GraphicsProgram {
             gobjNew.setFont(gobj.getFont());
             add(gobjNew);
             gobjNew.sendToFront();
-
         }
 
     }
