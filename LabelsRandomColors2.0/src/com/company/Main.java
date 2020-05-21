@@ -67,6 +67,7 @@ public class Main extends GraphicsProgram {
              * nessun errore, nessuna warnings
              */
 
+
             gobjNew.setColor(Color.decode(gobjNew.getLabel()));
 
             gobjNew.setFont(gobj.getFont());
