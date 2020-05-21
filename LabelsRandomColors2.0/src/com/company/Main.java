@@ -23,7 +23,6 @@ import java.awt.Color;
 public class Main extends GraphicsProgram {
 
     public static void main(String[] args) {
-
         (new com.company.Main()).start();
     }
 
@@ -35,7 +34,6 @@ public class Main extends GraphicsProgram {
         }
 
         addMouseListeners();
-
     }
 
     /****Creates a new label,
@@ -46,9 +44,11 @@ public class Main extends GraphicsProgram {
         GLabel label = new GLabel(s);
         label.setColor(rgen.nextColor());
         label.setFont("ARIAL-18");
+
         add(label, rgen.nextDouble(0, (getWidth() - label.getWidth())),
                 rgen.nextDouble(label.getAscent(), getHeight() - label.getAscent()));
     }
+
 
     public void mousePressed(MouseEvent e) {
 
@@ -57,9 +57,12 @@ public class Main extends GraphicsProgram {
         gobj = (GLabel) getElementAt(last);
 
         if (gobj != null) { //mouse has been pressed over one label
+
             gobjNew = new GLabel(gobj.getLabel(), gobj.getX(), gobj.getY());
+
             /** in debugging, quando arriva alla riga successiva, esce dal debugging, ma continua
              * ad eseguire correttamente il programma
+             *
              *
              * Ho provato a sostituire in setColor un colore fisso (es ROSSO) per vedere se il resto del codice funzia,
              * ed ha esito positivo. Quindi c'e qualcosa con la istruzione "decode" che non va.
@@ -71,10 +74,7 @@ public class Main extends GraphicsProgram {
             gobjNew.setFont(gobj.getFont());
             add(gobjNew);
             gobjNew.sendToFront();
-
-
         }
-
 
     }
 
